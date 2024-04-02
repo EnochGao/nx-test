@@ -10,6 +10,7 @@
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "buildLibsFromSource": false,
         "outputPath": "dist/apps/host",
         "index": "apps/host/src/index.html",
         "main": "apps/host/src/main.ts",
@@ -53,6 +54,7 @@
     "serve": {
       "executor": "@nx/angular:module-federation-dev-server",
       "options": {
+        "buildLibsFromSource": false,
         "port": 4200,
         "publicHost": "http://localhost:4200",
         "skipRemotes": ["child"]

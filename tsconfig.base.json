@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      //By this I mean libraries that are not managed by nx.
+      //There are some third-party library packages to export a global service,
+      //here I use "my-base": "file:dist/libs/my-base", simulation,
+      //the sub-application is no value
+      // "my-base": ["libs/my-base/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
