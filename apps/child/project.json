@@ -10,6 +10,7 @@
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "buildLibsFromSource": false,
         "outputPath": "dist/apps/child",
         "index": "apps/child/src/index.html",
         "main": "apps/child/src/main.ts",
@@ -65,6 +66,7 @@
       },
       "defaultConfiguration": "development",
       "options": {
+        "buildLibsFromSource": false,
         "port": 4201,
         "publicHost": "http://localhost:4201"
       }
