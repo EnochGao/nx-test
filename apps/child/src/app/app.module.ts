@@ -5,8 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BaseService } from 'my-base';
 
-import { NzIconService } from 'ng-zorro-antd/icon';
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -31,11 +29,7 @@ import { NzIconService } from 'ng-zorro-antd/icon';
 export class AppModule {
   constructor(
     private valueService: BaseService,
-    private nzIconService: NzIconService
   ) {
     this.valueService.changeAssetsSource('https://nx.dev');
-    this.nzIconService.changeAssetsSource(
-      'https://winkong-frontend.oss-cn-qingdao.aliyuncs.com/ng-zorro-icons'
-    );
   }
 }
