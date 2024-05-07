@@ -5,22 +5,18 @@ import { RouterModule } from '@angular/router';
 
 import { BaseService } from 'my-base';
 import { AppComponent } from './app.component';
-import { NzIconService } from 'ng-zorro-antd/icon';
 import { appRoutes } from './app.routes';
+import { NzButtonModule } from '@winkong/ng-zorro-antd/button';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes), NzButtonModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(
     private valueService: BaseService,
-    private nzIconService: NzIconService
   ) {
     this.valueService.changeAssetsSource('https://nx.dev');
-    this.nzIconService.changeAssetsSource(
-      'https://winkong-frontend.oss-cn-qingdao.aliyuncs.com/ng-zorro-icons'
-    );
   }
 }
