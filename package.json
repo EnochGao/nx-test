@@ -15,6 +15,7 @@
     "@angular/router": "18.1.1",
     "@nx/angular": "19.5.1",
     "my-base": "file:dist/libs/my-base",
+    "ng-zorro-antd": "^18.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "0.14.5"
