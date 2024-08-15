@@ -5,6 +5,7 @@
   "prefix": "nx-test",
   "sourceRoot": "apps/host/src",
   "tags": [],
+  "implicitDependencies": ["child"],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
