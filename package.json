@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "host": "npx nx serve host",
-    "child": "npx nx serve child"
+    "child": "npx nx serve child",
+    "normal": "npx nx serve normal"
   },
   "private": true,
   "dependencies": {
