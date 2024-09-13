@@ -15,8 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "config": ["config/src/index.ts"],
-      "shell": ["libs/shell/src/index.ts"]
+      "@config": ["config/src/index.ts"],
+      "@form": ["libs/form/src/index.ts"],
+      "@shell": ["libs/shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

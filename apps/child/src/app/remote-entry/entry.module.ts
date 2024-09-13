@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 import { RemoteEntryComponent } from './entry.component';
 
 import { remoteRoutes } from './entry.routes';
+import { ShellComponent } from '@shell';
 
 @NgModule({
   declarations: [RemoteEntryComponent],
-  imports: [CommonModule, RouterModule.forChild(remoteRoutes)],
+  imports: [CommonModule, ShellComponent, RouterModule.forChild(remoteRoutes)],
 })
 export class RemoteEntryModule {}

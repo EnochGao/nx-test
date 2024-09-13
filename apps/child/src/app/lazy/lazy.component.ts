@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'nx-test-lazy',
   template: `
-    host
+    lazy
     <lib-form></lib-form>
   `,
 })
