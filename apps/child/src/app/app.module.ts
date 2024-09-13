@@ -5,7 +5,9 @@ import {
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { NzConfigService } from 'ng-zorro-antd/core/config';
 import { AppComponent } from './app.component';
+import { ZorroConfig } from 'config';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +27,10 @@ import { AppComponent } from './app.component';
       { initialNavigation: 'enabledBlocking' }
     ),
   ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
+  providers: [
+    provideHttpClient(withInterceptorsFromDi()),
+    NzConfigService,
+    ZorroConfig,
+  ],
 })
 export class AppModule {}
