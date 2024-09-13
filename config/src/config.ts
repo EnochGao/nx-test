@@ -10,13 +10,9 @@ const ngZorroConfig: NzConfig = {
     nzAutoTips: {
       'zh-cn': {
         required: '必填项',
-        validateName: '名称不可用',
-        validateNo: '编码不可用',
       },
       default: {
-        required: '必填',
-        validateName: '名称不可用',
-        validateNo: '编码不可用',
+        required: '这是必填项',
       },
     },
   },
